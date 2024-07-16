@@ -43,7 +43,18 @@ namespace Lesson1.Interfaces
          */
         public T FindById(int id);
 
+        /**
+         * Find a row by its name in the T array.
+         * @param name The name of the object to be found.
+         * @return The object with the specified name, or null if not found.
+         */
         public T FindByName(string name);
+        
+        /**
+         * Search for objects in the array that match the specified condition.
+         * @param where A Predicate that defines the condition to match the objects.
+         * @return An array of objects that match the specified condition, or empty array if there are no elements met the condition.
+         */
         public T[] Search(Predicate<dynamic> where);
     }
 }
