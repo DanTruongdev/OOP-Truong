@@ -19,7 +19,6 @@ namespace lesson1.DAO
             AccessoryTable = new Accessory[100];
         }
 
-        //return index of new element
         public int InsertTable(string name, BaseRow row)
         {
             var arr = GetArray(name);

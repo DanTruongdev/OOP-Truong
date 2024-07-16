@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace lesson1.MuckEntity
 {
-    public class Product : BaseRow, IEntity
+    public class Product : BaseRow
     {
         public string Brand { get; set; }
         public double Price { get; set; }

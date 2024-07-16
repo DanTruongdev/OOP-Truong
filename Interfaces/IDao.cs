@@ -42,5 +42,8 @@ namespace Lesson1.Interfaces
          * @return The object with the specified ID, or null if not found.
          */
         public T FindById(int id);
+
+        public T FindByName(string name);
+        public T[] Search(Predicate<dynamic> where);
     }
 }

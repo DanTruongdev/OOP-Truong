@@ -23,9 +23,9 @@ namespace Lesson1
             //demo.TruncateTable();
 
 
-            //CategoryDAODemo categoryDAODemo = new CategoryDAODemo();
-            //categoryDAODemo.InsertTest();
-            //categoryDAODemo.UpdateTest();
+            CategoryDAODemo categoryDAODemo = new CategoryDAODemo();
+            categoryDAODemo.InsertTest();
+            categoryDAODemo.UpdateTest();
             //categoryDAODemo.DeleteTest();
             //categoryDAODemo.FindByIdTest();
 

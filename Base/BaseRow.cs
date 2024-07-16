@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Lesson1.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Lesson1.Base
 {
-    public abstract class BaseRow
+    public abstract class BaseRow : IEntity
     {
         private int _id { get; set; }
         public int Id 
