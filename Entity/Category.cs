@@ -8,12 +8,9 @@ using System.Threading.Tasks;
 namespace lesson1.MuckEntity
 {
     public class Category : BaseRow
-    {
-       
-        
+    {      
         public Category(int id, string name) : base(id, name) { }
         
-       
         public override string ToString()
         {
             return $"Category ID: {Id}, Category name: {Name}";

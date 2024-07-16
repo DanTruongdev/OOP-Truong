@@ -1,9 +1,4 @@
 ﻿using Lesson1.Base;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Lesson1.Interfaces
 {
@@ -44,12 +39,12 @@ namespace Lesson1.Interfaces
         public T FindById(int id);
 
         /**
-         * Find a row by its name in the T array.
-         * @param name The name of the object to be found.
-         * @return The object with the specified name, or null if not found.
-         */
+          * Find a row by its name in the T array.
+          * @param name The name of the object to be found.
+          * @return The object with the specified name, or null if not found.
+          */
         public T FindByName(string name);
-        
+
         /**
          * Search for objects in the array that match the specified condition.
          * @param where A Predicate that defines the condition to match the objects.

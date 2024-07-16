@@ -125,7 +125,7 @@ namespace Lesson1.Demo
                 _db.InsertTable("accessory", mockData);
             });
 
-            //PrintTableTest();
+            PrintTableTest();
         }
 
         public void PrintTableTest()
@@ -134,7 +134,6 @@ namespace Lesson1.Demo
             var productArr = _db.SelectTable("product", p => p.Id > int.MinValue);
             for (int i = 0; i < productArr.Length; i++)
             {
-                if (productArr[i] == null) break;
                 Console.WriteLine($"arr[{i}] = {productArr[i]}");
             }
             Console.WriteLine();
@@ -143,7 +142,7 @@ namespace Lesson1.Demo
             var categoryArr = _db.SelectTable("category", p => p.Id > int.MinValue);
             for (int i = 0; i < categoryArr.Length; i++)
             {
-                if (categoryArr[i] == null) break;
+                
                 Console.WriteLine($"arr[{i}] = {categoryArr[i]}");
             }
             Console.WriteLine();
@@ -152,7 +151,6 @@ namespace Lesson1.Demo
             var accessoryArr = _db.SelectTable("accessory", p => p.Id > int.MinValue);
             for (int i = 0; i < accessoryArr.Length; i++)
             {
-                if (accessoryArr[i] == null) break;
                 Console.WriteLine($"arr[{i}] = {accessoryArr[i]}");
             }
         }

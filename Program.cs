@@ -14,18 +14,18 @@ namespace Lesson1
             //productDemo.PrintProduct(newProduct);
 
 
-            //DatabaseDemo demo = new DatabaseDemo();
-            //demo.InitDatabase();
+            DatabaseDemo demo = new DatabaseDemo();
+            demo.InitDatabase();
             //demo.InsertTableTest();
             //demo.SelectTableTest();
             //demo.UpdateTableTest();
-            //demo.DeleteTableTest();
+            demo.DeleteTableTest();
             //demo.TruncateTable();
 
 
-            CategoryDAODemo categoryDAODemo = new CategoryDAODemo();
-            categoryDAODemo.InsertTest();
-            categoryDAODemo.UpdateTest();
+            //CategoryDAODemo categoryDAODemo = new CategoryDAODemo();
+            //categoryDAODemo.InsertTest();
+            //categoryDAODemo.UpdateTest();
             //categoryDAODemo.DeleteTest();
             //categoryDAODemo.FindByIdTest();
 
