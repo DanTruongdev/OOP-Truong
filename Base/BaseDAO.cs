@@ -75,13 +75,14 @@ namespace Lesson1.Base
         }
 
         /**
-         * Retrieves a row from the "product" table by its name.
-         * @param name The name to search for in the "product" table.
+         * Retrieves a row from the T table by its name.
+         * @param name The name to search for in the T table.
          * @return The row of type T with the specified name, or null if not found.
          */
-        public T FindByName(string name)
+        public T FindByName(string entityName)
         {
-            var result = _db.SelectTable("product", c => c.Name.Equals(name));
+            string name = typeof(T).Name.ToLower();
+            var result = _db.SelectTable(name, c => c.Name.Equals(entityName));
             if (result.Length == 0) return null;
             T response = (T)result.FirstOrDefault();
             return response;

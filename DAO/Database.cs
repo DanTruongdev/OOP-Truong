@@ -1,5 +1,6 @@
 using lesson1.MuckEntity;
 using Lesson1.Base;
+using Lesson1.Common;
 using System;
 using System.Linq;
 
@@ -10,7 +11,7 @@ namespace lesson1.DAO
         private Product[] ProductTable { get; set; }
         private Category[] CategoryTable { get; set; }
         private Accessory[] AccessoryTable { get; set; }
-
+        
         // Singleton instance of the Database class
         private static Database _instance = new Database();
         public static Database Instance { get { return _instance; } }
@@ -130,11 +131,11 @@ namespace lesson1.DAO
         {
             switch (name.ToLower())
             {
-                case "product":
+                case TableName.Product:
                     return ProductTable;
-                case "category":
+                case TableName.Category:
                     return CategoryTable;
-                case "accessory":
+                case TableName.Accessory:
                     return AccessoryTable;
                 default:
                     return null;
@@ -146,13 +147,13 @@ namespace lesson1.DAO
         {
             switch (name.ToLower())
             {
-                case "product":
+                case TableName.Product:
                     ProductTable = newArray.Select(p => (Product)p).ToArray();
                     break;
-                case "category":
+                case TableName.Category:
                     CategoryTable = newArray.Select(c => (Category)c).ToArray();
                     break;
-                case "accessory":
+                case TableName.Accessory:
                     AccessoryTable = newArray.Select(a => (Accessory)a).ToArray();
                     break;
             }
